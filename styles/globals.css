@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #DB3022;
   text-decoration: none;
 }
 
@@ -15,12 +15,18 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.MuiInputBase-root{
+  border-radius: 5px;
+  background: white;
 }
+.MuiInputLabel-root{
+margin-inline: 5px;
+}
+        .ProductList>div::-webkit-scrollbar {
+display: none;
+  }
+
+  .MuiTabs-indicator{
+    height: 5px;
+    border-radius: 5px 5px 0px 0px;
+  }
