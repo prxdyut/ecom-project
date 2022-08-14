@@ -67,7 +67,7 @@ export default function HomePage() {
           bgcolor: "primary.white",
           position: "fixed",
           width: "100vw",
-          top: "0",
+          top: "0",zIndex: '2'
         }}
         elevation={0}
       >

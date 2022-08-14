@@ -122,7 +122,7 @@ export default function HomePage() {
           bgcolor: "primary.white",
           position: "fixed",
           width: "100vw",
-          top: "0",
+          top: "0",zIndex: '2'
         }}
         elevation={0}
       >
@@ -241,6 +241,7 @@ export default function HomePage() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            mt: 1,
           }}
         >
           <FormControl variant="filled" sx={{ m: 1, minWidth: 120, m: 0 }}>
