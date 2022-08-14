@@ -15,8 +15,8 @@ a {
   box-sizing: border-box;
 }
 
-.MuiInputBase-root{
-  border-radius: 5px;
+.MuiInputBase-root, .MuiFormControl-root{
+  border-radius: 15px;
   background: white;
 }
 .MuiInputLabel-root{

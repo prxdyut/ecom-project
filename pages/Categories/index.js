@@ -23,7 +23,7 @@ const Category = () => {
     return(
 
         <motion.div
-        initial={{ opacity: 0, x: -15, y:-5 }}
+        initial={{ opacity: 0, x: -15, y:5 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5 }}
@@ -108,6 +108,23 @@ export default function HomePage() {
       <br />
       <Container>
         <Stack spacing={2}>
+        <Card
+          elevation={0}
+          sx={{
+            height: 100,
+            borderRadius: '25px',
+            bgcolor: 'primary.main',
+          }}
+        >
+          <CardContent sx={{ display: "flex", alignItems: "center",justifyContent: 'center', flexDirection: 'column' }}>
+            <Typography variant="h5" sx={{ fontWeight: 700, color: 'white' }}>
+              Explore Offers
+            </Typography>
+            <Typography variant="body1" sx={{ color: 'white' }}>
+              Upto 50% off
+            </Typography>
+          </CardContent>
+        </Card>
             <Category />
             <Category />
             <Category />
