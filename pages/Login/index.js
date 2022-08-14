@@ -76,7 +76,6 @@ export default function LoginPage() {
                     marginLeft: "auto",
                   }}
                 >
-                  {" "}
                   Don't have an account? <Link href={"/Signup"}> Signup </Link>
                 </Typography>
                 </Stack>
