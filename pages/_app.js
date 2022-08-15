@@ -1,7 +1,7 @@
 import "../styles/font.css";
 import "../styles/globals.css";
 
-import ThemeNesting from "../src/context/ThemeProvider";
+import ThemeNesting from "../src/context/themeProvider";
 import Transition from "../src/context/TransitionProvider";
 import BottombarProvider from "../src/context/AppbarProvider/Bottombar";
 import TopbarProvider from "../src/context/AppbarProvider/Topbar";

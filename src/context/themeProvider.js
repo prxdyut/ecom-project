@@ -1,8 +1,7 @@
-import * as React from 'react';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { orange } from '@mui/material/colors';
-
+import * as React from 'react';
 import { Box } from '@mui/material';
 
 const mainTheme = createTheme({

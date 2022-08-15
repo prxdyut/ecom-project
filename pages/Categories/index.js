@@ -9,7 +9,6 @@ import {
 
 import AppBar from "@mui/material/AppBar";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import BottomNav from "../../src/Layout/BottomNav";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import React from "react";
