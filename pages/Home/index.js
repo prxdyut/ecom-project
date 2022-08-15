@@ -1,4 +1,3 @@
-import BottomNav from "../../src/Layout/BottomNav";
 import {
   Container
 } from "@mui/material";
@@ -17,10 +16,6 @@ export default function HomePage() {
         <ProductList />
         <ExploreCategoryButton/>
       </Container>
-      <br />
-      <br />
-      <br />
-      <BottomNav page={"Home"} />
     </React.Fragment>
   );
 }
