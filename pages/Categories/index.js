@@ -139,7 +139,6 @@ export default function HomePage() {
       <br />
       <br />
       <br />
-      <BottomNav page={1} />
     </React.Fragment>
   );
 }
