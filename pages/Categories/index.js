@@ -9,12 +9,9 @@ import {
 
 import AppBar from "@mui/material/AppBar";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import React from "react";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import { Tab } from "@mui/material";
-import { Tabs } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import { motion } from "framer-motion";
 
