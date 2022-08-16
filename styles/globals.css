@@ -30,3 +30,22 @@ display: none;
     height: 5px;
     border-radius: 5px 5px 0px 0px;
   }
+
+  button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected::before {
+    height: 100px;
+    width: 70px;
+    background: red;
+    content: "";
+    color: red;
+    position: fixed;
+    z-index: -1;
+    /* background: white; */
+    border-radius: 30px;
+  }
+  button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected{
+    font-size: 'xx-large'
+  }
+  button.MuiButtonBase-root.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
+    color: black;
+    font-size: 'x-large'
+}

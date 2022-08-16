@@ -8,8 +8,12 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingBagRoundedIcon from "@mui/icons-material/ShoppingBagRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import { Container } from "@mui/material";
+
+import { useRouter } from 'next/router';
 
 export default function Bottombar1({ page }) {
+  const Router = useRouter();
   const [value, setValue] = React.useState(page);
 
   const handleChange = (event, newValue) => {
@@ -32,29 +36,34 @@ export default function Bottombar1({ page }) {
       onChange={handleChange}
     >
       <BottomNavigationAction
-        label="Home"
+      disableRipple
+      onClick={() => Router.push('./Home')}
         value="Home"
-        icon={<HomeRoundedIcon />}
+        // label="Home"
+        icon={<HomeRoundedIcon sx={{fontSize: 'x-large'}} />}
       />
       <BottomNavigationAction
-        label="Search"
+      onClick={() => Router.push('./Search')}
+      disableRipple
         value="Search"
-        icon={<SearchRoundedIcon />}
+        // label="Search"
+        icon={<SearchRoundedIcon sx={{fontSize: 'x-large'}} />}
       />
       <BottomNavigationAction
-        label="Bag"
+      disableRipple
         value="Bag"
-        icon={<ShoppingBagRoundedIcon />}
+        // label="Bag"
+        icon={<ShoppingBagRoundedIcon sx={{fontSize: 'x-large'}} />}
       />
-      <BottomNavigationAction
-        label="Favourite"
+      {/* <BottomNavigationAction
         value="Favourite"
-        icon={<FavoriteRoundedIcon />}
-      />
+        icon={<FavoriteRoundedIcon sx={{fontSize: 'xx-large', color: 'black'}} />}
+      /> */}
       <BottomNavigationAction
-        label="Profile"
+      disableRipple
+        // label="Profile"
         value="Profile"
-        icon={<PersonRoundedIcon />}
+        icon={<PersonRoundedIcon sx={{fontSize: 'x-large'}} />}
       />
     </BottomNavigation>
     </React.Fragment>

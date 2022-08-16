@@ -4,6 +4,8 @@ import IconButton from "@mui/material/IconButton";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Toolbar from "@mui/material/Toolbar";
 import Input from "@mui/material/Input";
+import Link from 'next/link';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
 export default function SearchTopbar() {
   return (
@@ -34,6 +36,17 @@ export default function SearchTopbar() {
             disableUnderline
             sx={{ width: "calc(100vw - 2rem - 12px - 8px - 8px - 8px)" }}
           />
+          
+          <Link href='./Cart'> 
+          <IconButton
+            size="medium"
+            edge="end"
+            color="inherit"
+            aria-label="menu"
+            sx={{ ml: 2 }}
+          >
+            <ShoppingCartRoundedIcon sx={{ color: "primary.text" }} />
+          </IconButton></Link>
         </Toolbar>
       </AppBar>
       <br />

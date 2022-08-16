@@ -1,6 +1,8 @@
 import "../styles/font.css";
 import "../styles/globals.css";
 
+import Script from 'next/script'
+
 import ThemeNesting from "../src/context/themeProvider";
 import Transition from "../src/context/TransitionProvider";
 import BottombarProvider from "../src/context/AppbarProvider/Bottombar";
@@ -15,6 +17,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeNesting>
       <TopbarProvider />
+      {/* <Script
+        src="./script.js"
+        onLoad={() => {
+          console.log('Loaded Script');
+        }}
+      /> */}
       <Transition>
         <Component {...pageProps} />
       </Transition>
