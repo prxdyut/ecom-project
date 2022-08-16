@@ -84,11 +84,11 @@ const id = open ? 'simple-popover' : undefined;
 >
 
 <Box  onClick={handleClick} sx={{ borderRadius:5, bgcolor: 'white' }}>
-              <Button disableRipple fullWidth sx={{textTransform: 'none', fontWeight: '700', justifyContent: 'left'}}>
+              {/* <Button disableRipple fullWidth sx={{textTransform: 'none', fontWeight: '700', justifyContent: 'left'}}>
                 Add to later
               </Button>
-              <Divider />
-              <Button disableRipple sx={{color: 'red', textTransform: 'none', fontWeight: '700'}}>
+              <Divider /> */}
+              <Button disableRipple sx={{color: 'red', textTransform: 'none', fontWeight: '700', p:1}}>
                 Remove from Cart
               </Button>
             </Box>
