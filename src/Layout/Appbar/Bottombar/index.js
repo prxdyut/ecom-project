@@ -40,20 +40,21 @@ export default function Bottombar1({ page }) {
       onClick={() => Router.push('./Home')}
         value="Home"
         // label="Home"
-        icon={<HomeRoundedIcon sx={{fontSize: 'x-large'}} />}
+        icon={<HomeRoundedIcon   />}
       />
       <BottomNavigationAction
       onClick={() => Router.push('./Search')}
       disableRipple
         value="Search"
         // label="Search"
-        icon={<SearchRoundedIcon sx={{fontSize: 'x-large'}} />}
+        icon={<SearchRoundedIcon   />}
       />
       <BottomNavigationAction
+      onClick={() => Router.push('./Cart')}
       disableRipple
-        value="Bag"
+        value="Cart"
         // label="Bag"
-        icon={<ShoppingBagRoundedIcon sx={{fontSize: 'x-large'}} />}
+        icon={<ShoppingBagRoundedIcon   />}
       />
       {/* <BottomNavigationAction
         value="Favourite"
@@ -63,7 +64,7 @@ export default function Bottombar1({ page }) {
       disableRipple
         // label="Profile"
         value="Profile"
-        icon={<PersonRoundedIcon sx={{fontSize: 'x-large'}} />}
+        icon={<PersonRoundedIcon   />}
       />
     </BottomNavigation>
     </React.Fragment>
