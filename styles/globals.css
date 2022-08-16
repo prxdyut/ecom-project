@@ -50,7 +50,7 @@ button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected{
 }
 button.MuiButtonBase-root.MuiBottomNavigationAction-root >svg.MuiSvgIcon-root  {
   font-size: x-large;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected >svg.MuiSvgIcon-root  {
   font-size: xx-large;
