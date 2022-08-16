@@ -31,8 +31,8 @@ display: none;
     border-radius: 5px 5px 0px 0px;
   }
   button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected::before {
-    height: 100px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     background: red;
     content: "";
     color: red;
@@ -40,8 +40,18 @@ display: none;
     z-index: -1;
     /* background: white; */
     border-radius: 30px;
+    bottom: 2px
   }
   button.MuiButtonBase-root.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
     color: black;
-    font-size: xx-large;
+}
+button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected{
+  color: white;
+}
+button.MuiButtonBase-root.MuiBottomNavigationAction-root >svg.MuiSvgIcon-root  {
+  font-size: x-large;
+  transition: 0.2s;
+}
+button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected >svg.MuiSvgIcon-root  {
+  font-size: xx-large;
 }
