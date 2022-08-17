@@ -10,11 +10,15 @@ export default function BottombarProvider(){
     const Product = pathname == '/Product';
     const Cart = pathname == '/Cart';
     const Search = pathname == '/Search';
+    const Categories = pathname == '/Categories';
+    
+    
     return(
         <React.Fragment>
             {Home ? <Bottombar page="Home" /> : null}
             {Cart ? <Bottombar page="Cart" /> : null}
             {Search ? <Bottombar page="Search" /> : null}
+            {Categories ? <Bottombar page="Search" /> : null}
             {Product ? <ProductBottombar /> : null}
         </React.Fragment>
     )

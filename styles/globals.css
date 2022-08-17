@@ -31,16 +31,16 @@ display: none;
     border-radius: 5px 5px 0px 0px;
   }
   button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected::before {
-    height: 50px;
-    width: 50px;
-    background: red;
+    height: 40px;
+    width: 40px;
+    background: #DB3022;
     content: "";
-    color: red;
+    color: #DB3022;
     position: fixed;
     z-index: -1;
     /* background: white; */
     border-radius: 30px;
-    bottom: 2px
+    bottom: 7px;
   }
   button.MuiButtonBase-root.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
     color: black;
