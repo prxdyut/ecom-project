@@ -3,8 +3,8 @@ import {
   CardContent,
   CardMedia,
   Container,
-  Typography,
   Stack,
+  Typography,
 } from "@mui/material";
 
 import AppBar from "@mui/material/AppBar";
@@ -57,51 +57,6 @@ export default function HomePage() {
   };
   return (
     <React.Fragment>
-      <AppBar
-        position="static"
-        sx={{
-          bgcolor: "primary.white",
-          position: "fixed",
-          width: "100vw",
-          top: "0",zIndex: '2'
-        }}
-        elevation={0}
-      >
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <IconButton
-            size="medium"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <ArrowBackIosNewRoundedIcon sx={{ color: "primary.text" }} />
-          </IconButton>
-          <Typography
-            variant="h6"
-            sx={{
-              color: "text.primary",
-              textAlign: "center",
-              fontWeight: "600",
-            }}
-          >
-            Categories{" "}
-          </Typography>
-          <IconButton
-            size="medium"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 2 }}
-          >
-            <SearchRoundedIcon sx={{ color: "primary.text" }} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <br />
-      <br />
-      <br />
-      <br />
       <Container>
         <Stack spacing={2}>
         <Card
@@ -125,20 +80,8 @@ export default function HomePage() {
             <Category />
             <Category />
             <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
         </Stack>
       </Container>
-      <br />
-      <br />
-      <br />
     </React.Fragment>
   );
 }
