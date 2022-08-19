@@ -37,7 +37,7 @@ export default function LoginPage() {
           </Toolbar>
         </AppBar>
       </Box>
-      <Container>
+      <Container id="login">
         <Box
           style={{
             display: "flex",
@@ -55,29 +55,30 @@ export default function LoginPage() {
           <Box>
             <Box sx={{ my: 2.5 }}>
               <Stack spacing={1.5}>
-                  <TextField
-                    id="Email"
-                    label="Email"
-                    variant="filled"
-                    fullWidth
-                    InputProps={{ disableUnderline: true }}
-                  />
-                  <TextField
-                    id="Password"
-                    label="Password"
-                    variant="filled"
-                    fullWidth
-                    InputProps={{ disableUnderline: true }}
-                  />
+                <TextField
+                  id="Email"
+                  label="Email"
+                  variant="filled"
+                  fullWidth
+                  InputProps={{ disableUnderline: true }}
+                />
+                <TextField
+                  id="Password"
+                  label="Password"
+                  variant="filled"
+                  fullWidth
+                  InputProps={{ disableUnderline: true }}
+                />
                 <Stack>
-                <Typography
-                  sx={{
-                    color: "primary.text",
-                    marginLeft: "auto",
-                  }}
-                >
-                  Don{"'"}t have an account? <Link href={"/Signup"}> Signup </Link>
-                </Typography>
+                  <Typography
+                    sx={{
+                      color: "primary.text",
+                      marginLeft: "auto",
+                    }}
+                  >
+                    Don{"'"}t have an account?{" "}
+                    <Link href={"/Signup"}> Signup </Link>
+                  </Typography>
                 </Stack>
               </Stack>
             </Box>

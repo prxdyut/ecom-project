@@ -8,6 +8,8 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingBagRoundedIcon from "@mui/icons-material/ShoppingBagRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import DynamicFeedRoundedIcon from '@mui/icons-material/DynamicFeedRounded';
+import AppsRoundedIcon from '@mui/icons-material/AppsRounded';
 import { Container } from "@mui/material";
 
 import { useRouter } from 'next/router';
@@ -43,11 +45,11 @@ export default function Bottombar1({ page }) {
         icon={<HomeRoundedIcon   />}
       />
       <BottomNavigationAction
-      onClick={() => Router.push('./Search')}
+      onClick={() => Router.push('./Categories')}
       disableRipple
-        value="Search"
+        value="Feed"
         // label="Search"
-        icon={<SearchRoundedIcon   />}
+        icon={<AppsRoundedIcon   />}
       />
       <BottomNavigationAction
       onClick={() => Router.push('./Cart')}

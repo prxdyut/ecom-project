@@ -37,7 +37,7 @@ export default function SignupPage() {
           </Toolbar>
         </AppBar>
       </Box>
-      <Container>
+      <Container id="signup">
         <Box
           style={{
             display: "flex",
@@ -55,41 +55,42 @@ export default function SignupPage() {
           <Box>
             <Box sx={{ my: 2.5 }}>
               <Stack spacing={1.5}>
-                  <TextField
-                    id="Name"
-                    label="Name"
-                    variant="filled"
-                    fullWidth
-                    InputProps={{ disableUnderline: true }}
-                    inputProps={{}}
-                  />
-                  <TextField
-                    id="Email"
-                    label="Email"
-                    variant="filled"
-                    fullWidth
-                    InputProps={{ disableUnderline: true }}
-                  />
-                  <TextField
-                    id="Password"
-                    label="Password"
-                    variant="filled"
-                    fullWidth
-                    InputProps={{ disableUnderline: true }}
-                  />
+                <TextField
+                  id="Name"
+                  label="Name"
+                  variant="filled"
+                  fullWidth
+                  InputProps={{ disableUnderline: true }}
+                  inputProps={{}}
+                />
+                <TextField
+                  id="Email"
+                  label="Email"
+                  variant="filled"
+                  fullWidth
+                  InputProps={{ disableUnderline: true }}
+                />
+                <TextField
+                  id="Password"
+                  label="Password"
+                  variant="filled"
+                  fullWidth
+                  InputProps={{ disableUnderline: true }}
+                />
                 <Stack>
-                <Typography
-                  sx={{
-                    color: "primary.text",
-                    marginLeft: "auto",
-                  }}
-                >
-                  Already have an account? <Link href={"/Login"}> Login </Link>
-                </Typography></Stack>
+                  <Typography
+                    sx={{
+                      color: "primary.text",
+                      marginLeft: "auto",
+                    }}
+                  >
+                    Already have an account?{" "}
+                    <Link href={"/Login"}> Login </Link>
+                  </Typography>
+                </Stack>
               </Stack>
             </Box>
             <Box>
-
               <Button
                 variant="contained"
                 href=""

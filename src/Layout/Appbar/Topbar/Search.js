@@ -36,17 +36,6 @@ export default function SearchTopbar() {
             disableUnderline
             sx={{ width: "calc(100vw - 2rem - 12px - 8px - 8px - 8px)" }}
           />
-          
-          <Link href='./Cart'> 
-          <IconButton
-            size="medium"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 2 }}
-          >
-            <ShoppingCartRoundedIcon sx={{ color: "primary.text" }} />
-          </IconButton></Link>
         </Toolbar>
       </AppBar>
       <br />

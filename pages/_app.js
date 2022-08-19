@@ -1,7 +1,7 @@
 import "../styles/font.css";
 import "../styles/globals.css";
 
-import Script from 'next/script'
+import Script from "next/script";
 
 import ThemeNesting from "../src/context/themeProvider";
 import Transition from "../src/context/TransitionProvider";
@@ -13,7 +13,6 @@ export function reportWebVitals(metric) {
 }
 
 function MyApp({ Component, pageProps }) {
-
   return (
     <ThemeNesting>
       <TopbarProvider />
@@ -26,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       <Transition>
         <Component {...pageProps} />
       </Transition>
-<BottombarProvider />
+      <BottombarProvider />
     </ThemeNesting>
   );
 }

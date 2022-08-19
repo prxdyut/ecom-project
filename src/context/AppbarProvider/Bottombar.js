@@ -17,8 +17,8 @@ export default function BottombarProvider(){
         <React.Fragment>
             {Home ? <Bottombar page="Home" /> : null}
             {Cart ? <Bottombar page="Cart" /> : null}
-            {Search ? <Bottombar page="Search" /> : null}
-            {Categories ? <Bottombar page="Search" /> : null}
+            {Search ? <Bottombar /> : null}
+            {Categories ? <Bottombar page="Feed" /> : null}
             {Product ? <ProductBottombar /> : null}
         </React.Fragment>
     )

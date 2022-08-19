@@ -5,35 +5,38 @@ import {
   Pagination,
   RefinementList,
   SearchBox,
-} from 'react-instantsearch-hooks-web';
-import React, { Fragment, useEffect, useRef } from 'react';
+} from "react-instantsearch-hooks-web";
+import React, { Fragment, useEffect, useRef } from "react";
 
-import algoliasearch from 'algoliasearch/lite';
-import { render } from 'react-dom';
+import algoliasearch from "algoliasearch/lite";
+import { render } from "react-dom";
 
-const searchClient = algoliasearch('9H0DYYY13N', '1a72e07a8df5188146ce90796e990f62');
+const searchClient = algoliasearch(
+  "9H0DYYY13N",
+  "1a72e07a8df5188146ce90796e990f62"
+);
 
 export function Autocomplete(props) {
-    const containerRef = useRef(null);
-  
-    useEffect(() => {
-      if (!containerRef.current) {
-        return undefined;
-      }
-  
-      const search = autocomplete({
-        container: containerRef.current,
-        renderer: { createElement, Fragment, render },
-        ...props,
-      });
-  
-      return () => {
-        search.destroy();
-      };
-    }, [props]);
-  
-    return <div ref={containerRef} />;
-  }
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (!containerRef.current) {
+      return undefined;
+    }
+
+    const search = autocomplete({
+      container: containerRef.current,
+      renderer: { createElement, Fragment, render },
+      ...props,
+    });
+
+    return () => {
+      search.destroy();
+    };
+  }, [props]);
+
+  return <div ref={containerRef} />;
+}
 
 function Hit({ hit }) {
   return (
