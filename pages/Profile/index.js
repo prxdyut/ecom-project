@@ -41,27 +41,27 @@ mx: -2}}>
 <ListItemButton>
       <ListItem sx={{px:0,}}>
         <ListItemText primary="My Orders" secondary="You already have 12 orders" />
-        <ListItemButton sx={{maxWidth: 'min-content'}}>></ListItemButton>
+        <ListItemButton sx={{maxWidth: 'min-content'}}>{">"}</ListItemButton>
       </ListItem></ListItemButton><Divider /><ListItemButton>
 
       <ListItem sx={{px:0,}}>
         <ListItemText primary="My Address" secondary="3 Shipping Addresses" />
-        <ListItemButton sx={{maxWidth: 'min-content'}}>></ListItemButton>
+        <ListItemButton sx={{maxWidth: 'min-content'}}>{">"}</ListItemButton>
       </ListItem></ListItemButton><Divider /><ListItemButton>
 
       <ListItem sx={{px:0,}}>
         <ListItemText primary="Promo Codes" secondary="Feature coming soon" />
-        <ListItemButton sx={{maxWidth: 'min-content'}}>></ListItemButton>
+        <ListItemButton sx={{maxWidth: 'min-content'}}>{">"}</ListItemButton>
       </ListItem></ListItemButton><Divider /><ListItemButton>
 
       <ListItem sx={{px:0,}}>
         <ListItemText primary="My Reviews" secondary="Feature coming soon" />
-        <ListItemButton sx={{maxWidth: 'min-content'}}>></ListItemButton>
+        <ListItemButton sx={{maxWidth: 'min-content'}}>{">"}</ListItemButton>
       </ListItem></ListItemButton><Divider /><ListItemButton>
 
       <ListItem sx={{px:0,}}>
         <ListItemText primary="Settings" secondary="Notifications, Passwords" />
-        <ListItemButton sx={{maxWidth: 'min-content'}}>></ListItemButton>
+        <ListItemButton sx={{maxWidth: 'min-content'}}>{">"}</ListItemButton>
       </ListItem></ListItemButton>
     </List>
       </Container>
