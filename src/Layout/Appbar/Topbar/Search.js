@@ -26,7 +26,7 @@ export default function SearchTopbar() {
             size="medium"
             edge="start"
             color="inherit"
-            aria-label="Search"
+            ariaLabel="Search"
           >
             <SearchRoundedIcon sx={{ color: "primary.text" }} />
           </IconButton>

@@ -63,6 +63,7 @@ export default function Bottombar1({ page }) {
         icon={<FavoriteRoundedIcon sx={{fontSize: 'xx-large', color: 'black'}} />}
       /> */}
       <BottomNavigationAction
+      onClick={() => Router.push('./Profile')}
       disableRipple
         // label="Profile"
         value="Profile"

@@ -10,7 +10,7 @@ import { Stack } from "@mui/system";
   import Link from "next/link";
   import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
-export default function ProductTopbar({ head }) {
+export default function TabWithBackTopbar({ }) {
 const Router = useRouter();
   return (
     <React.Fragment>
@@ -44,7 +44,6 @@ const Router = useRouter();
               fontWeight: "600",
             }}
           >
-            {head}
           </Typography>
           <Box>
           <Link href='./Search'>
@@ -56,16 +55,6 @@ const Router = useRouter();
             sx={{ ml: 2 }}
           >
             <SearchRoundedIcon sx={{ color: "primary.text" }} />
-          </IconButton></Link>
-          <Link href='./Cart'>
-          <IconButton
-            size="medium"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 2 }}
-          >
-            <ShoppingCartRoundedIcon sx={{ color: "primary.text" }} />
           </IconButton></Link></Box>
         </Toolbar>
       </AppBar>
